@@ -1,0 +1,30 @@
+{
+  "type": "module",
+  "name": "pcpartsserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start-dev": "nodemon --experimental-modules --es-module-specifier-resolution=node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.9.0",
+    "http-status": "^1.6.2",
+    "jsonwebtoken": "^9.0.1",
+    "logger": "^0.0.1",
+    "mongodb": "^6.0.0",
+    "mongoose": "^7.5.0",
+    "path": "^0.12.7",
+    "winston": "^3.10.0",
+    "winston-daily-rotate-file": "^4.7.1"
+  }
+}
