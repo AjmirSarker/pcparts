@@ -6,6 +6,7 @@ const allProductsSchema = new mongoose.Schema(
     Model: {
       type: String,
       required: [true, "Model name is required"],
+      index: true,
     },
     Brand: {
       type: String,
@@ -18,6 +19,7 @@ const allProductsSchema = new mongoose.Schema(
     Category: {
       type: String,
       required: [true, "Category is required"],
+      index: true,
     },
     img1: {
       type: String,
@@ -30,6 +32,7 @@ const allProductsSchema = new mongoose.Schema(
     Status: {
       type: String,
       required: [true, "Status is required"],
+      index: true,
     },
     Price: {
       type: Number,
@@ -178,4 +181,4 @@ const allProductsSchema = new mongoose.Schema(
   }
 );
 
-export const Product = mongoose.model("Product", allProductsSchema, "products");
+export const Product = mongoose.model("Product", allProductsSchema);

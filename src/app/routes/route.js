@@ -1,6 +1,8 @@
 import express from "express";
 import { AllProductsRoutes } from "../modules/products/products.routes.js";
-import { AllProRoutes } from "../modules/pro/pro.routes.js";
+import path from "path";
+import { PcBuilderRoutes } from "../modules/pcBuilder/pcBuilder.routes.js";
+
 // const AllProductsRoutes = require("../modules/products/products.routes");
 const router = express.Router();
 
@@ -10,8 +12,8 @@ const moduleRoutes = [
     route: AllProductsRoutes,
   },
   {
-    path: "/pro",
-    route: AllProRoutes,
+    path: "/pcbuilder",
+    route: PcBuilderRoutes,
   },
 ];
 
