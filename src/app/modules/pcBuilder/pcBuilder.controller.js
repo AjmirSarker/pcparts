@@ -1,13 +1,25 @@
+import httpStatus from "http-status";
+import catchAsync from "../../../shared/catchAsync";
+import sendResponse from "../../../shared/sendResponse";
 import { PcBuilderService } from "./pcBuilder.service";
 
-const createPcBuilder = async (req, res) => {
-  const { ...allInfo } = req.body;
-  const result = await PcBuilderService.createPcBuilder(allInfo);
-  res.status(200).send(result);
-};
-const getAllPcBuilder = async (req, res) => {
-    const result = await PcBuilderService.getAllPcBuilder();
-    res.status(200).send(result);
-}
+const createPcBuilder = catchAsync(async (req, res) => {
+  const result = await PcBuilderService.createPcBuilder(req.body);
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: "Build Order Created successfully !",
+    data: result,
+  });
+});
+const getAllPcBuilder = catchAsync(async (req, res) => {
+  const result = await PcBuilderService.getAllPcBuilder();
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: "Order fetched successfully !",
+    data: result,
+  });
+});
 
-export const PcBuilderController = { createPcBuilder,getAllPcBuilder };
+export const PcBuilderController = { createPcBuilder, getAllPcBuilder };

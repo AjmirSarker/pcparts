@@ -1,27 +1,61 @@
+import catchAsync from "../../../shared/catchAsync";
+import sendResponse from "../../../shared/sendResponse";
 import { mergedObjectFields, productFilterFields } from "./products.constans";
 import { AllProductsService } from "./products.service";
+import httpStatus from "http-status";
 
-const getProducts = async (req, res) => {
+const getProducts = catchAsync(async (req, res) => {
   if (Object.keys(req.query).length !== 0) {
     const filterObj = mergedObjectFields(req.query);
     const products = await AllProductsService.getProducts(req.query, filterObj);
     res.status(200).send(products);
+    sendResponse(res, {
+      statusCode: httpStatus.OK,
+      success: true,
+      message: "Product fetched successfully !",
+      data: products,
+    });
   } else {
     const products = await AllProductsService.getProducts();
-    res.send(products);
+    sendResponse(res, {
+      statusCode: httpStatus.OK,
+      success: true,
+      message: "Products fetched successfully !",
+      data: products,
+    });
   }
-};
-const getProductsByModel = async (req, res) => {
+});
+const getProductsByModel = catchAsync(async (req, res) => {
   const byModel = await AllProductsService.getProductByModel(req.params.model);
-  res.send(byModel);
-};
-const insertManyProducts = async (req, res) => {
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: "Model fetched successfully !",
+    data: byModel,
+  });
+});
+const insertManyProducts = catchAsync(async (req, res) => {
   const products = await AllProductsService.insertManyProducts(req.body);
-  res.send(products);
-};
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: "Products inserted Successfully !",
+    data: products,
+  });
+});
+const deleteProducts = catchAsync(async (req, res) => {
+  const products = await AllProductsService.deleteProducts(req.params.id);
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: "Product deleted Successfully !",
+    data: products,
+  });
+});
 
 export const AllProductsController = {
   getProducts,
   getProductsByModel,
   insertManyProducts,
+  deleteProducts,
 };

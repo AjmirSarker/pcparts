@@ -35,56 +35,144 @@ const pcBuilderSchema = new mongoose.Schema(
       ProductId: Number,
     },
     RAM: {
-       Bid: {
+      Bid: {
         type: mongoose.Types.ObjectId,
         default: () => new mongoose.Types.ObjectId(),
+        required: true,
       },
-      Brand: String,
-      Category: String,
-      Model: String,
-      img1: String,
-      Details: String,
-      Price: Number,
-      ProductId: Number,
+      Brand: {
+        type: String,
+        required: true,
+      },
+      Category: {
+        type: String,
+        required: true,
+      },
+      Model: {
+        type: String,
+        required: true,
+      },
+      img1: {
+        type: String,
+        required: true,
+      },
+      Details: {
+        type: String,
+        required: true,
+      },
+      Price: {
+        type: Number,
+        required: true,
+      },
+      ProductId: {
+        type: Number,
+        required: true,
+      },
     },
     ROM: {
-       Bid: {
+      Bid: {
         type: mongoose.Types.ObjectId,
         default: () => new mongoose.Types.ObjectId(),
+        required: true,
       },
-      Brand: String,
-      Category: String,
-      Model: String,
-      img1: String,
-      Details: String,
-      Price: Number,
-      ProductId: Number,
+      Brand: {
+        type: String,
+        required: true,
+      },
+      Category: {
+        type: String,
+        required: true,
+      },
+      Model: {
+        type: String,
+        required: true,
+      },
+      img1: {
+        type: String,
+        required: true,
+      },
+      Details: {
+        type: String,
+        required: true,
+      },
+      Price: {
+        type: Number,
+        required: true,
+      },
+      ProductId: {
+        type: Number,
+        required: true,
+      },
     },
     SSD: {
-       Bid: {
+      Bid: {
         type: mongoose.Types.ObjectId,
         default: () => new mongoose.Types.ObjectId(),
+        required: true,
       },
-      Brand: String,
-      Category: String,
-      Model: String,
-      img1: String,
-      Details: String,
-      Price: Number,
-      ProductId: Number,
+      Brand: {
+        type: String,
+        required: true,
+      },
+      Category: {
+        type: String,
+        required: true,
+      },
+      Model: {
+        type: String,
+        required: true,
+      },
+      img1: {
+        type: String,
+        required: true,
+      },
+      Details: {
+        type: String,
+        required: true,
+      },
+      Price: {
+        type: Number,
+        required: true,
+      },
+      ProductId: {
+        type: Number,
+        required: true,
+      },
     },
     PSU: {
-       Bid: {
+      Bid: {
         type: mongoose.Types.ObjectId,
         default: () => new mongoose.Types.ObjectId(),
+        required: true,
       },
-      Brand: String,
-      Category: String,
-      Model: String,
-      img1: String,
-      Details: String,
-      Price: Number,
-      ProductId: Number,
+      Brand: {
+        type: String,
+        required: true,
+      },
+      Category: {
+        type: String,
+        required: true,
+      },
+      Model: {
+        type: String,
+        required: true,
+      },
+      img1: {
+        type: String,
+        required: true,
+      },
+      Details: {
+        type: String,
+        required: true,
+      },
+      Price: {
+        type: Number,
+        required: true,
+      },
+      ProductId: {
+        type: Number,
+        required: true,
+      },
     },
     GPU: {
        Bid: {
@@ -113,17 +201,39 @@ const pcBuilderSchema = new mongoose.Schema(
       ProductId: Number,
     },
     MotherBoard: {
-       Bid: {
+      Bid: {
         type: mongoose.Types.ObjectId,
         default: () => new mongoose.Types.ObjectId(),
+        required: true,
       },
-      Brand: String,
-      Category: String,
-      Model: String,
-      img1: String,
-      Details: String,
-      Price: Number,
-      ProductId: Number,
+      Brand: {
+        type: String,
+        required: true,
+      },
+      Category: {
+        type: String,
+        required: true,
+      },
+      Model: {
+        type: String,
+        required: true,
+      },
+      img1: {
+        type: String,
+        required: true,
+      },
+      Details: {
+        type: String,
+        required: true,
+      },
+      Price: {
+        type: Number,
+        required: true,
+      },
+      ProductId: {
+        type: Number,
+        required: true,
+      },
     },
     Monitor: {
        Bid: {
@@ -152,17 +262,39 @@ const pcBuilderSchema = new mongoose.Schema(
       ProductId: Number,
     },
     CPU: {
-       Bid: {
+      Bid: {
         type: mongoose.Types.ObjectId,
         default: () => new mongoose.Types.ObjectId(),
+        required: true,
       },
-      Brand: String,
-      Category: String,
-      Model: String,
-      img1: String,
-      Details: String,
-      Price: Number,
-      ProductId: Number,
+      Brand: {
+        type: String,
+        required: true,
+      },
+      Category: {
+        type: String,
+        required: true,
+      },
+      Model: {
+        type: String,
+        required: true,
+      },
+      img1: {
+        type: String,
+        required: true,
+      },
+      Details: {
+        type: String,
+        required: true,
+      },
+      Price: {
+        type: Number,
+        required: true,
+      },
+      ProductId: {
+        type: Number,
+        required: true,
+      },
     },
     CpuCooler: {
        Bid: {
@@ -178,17 +310,39 @@ const pcBuilderSchema = new mongoose.Schema(
       ProductId: Number,
     },
     Casing: {
-       Bid: {
+      Bid: {
         type: mongoose.Types.ObjectId,
         default: () => new mongoose.Types.ObjectId(),
+        required: true,
       },
-      Brand: String,
-      Category: String,
-      Model: String,
-      img1: String,
-      Details: String,
-      Price: Number,
-      ProductId: Number,
+      Brand: {
+        type: String,
+        required: true,
+      },
+      Category: {
+        type: String,
+        required: true,
+      },
+      Model: {
+        type: String,
+        required: true,
+      },
+      img1: {
+        type: String,
+        required: true,
+      },
+      Details: {
+        type: String,
+        required: true,
+      },
+      Price: {
+        type: Number,
+        required: true,
+      },
+      ProductId: {
+        type: Number,
+        required: true,
+      },
     },
   },
   {
