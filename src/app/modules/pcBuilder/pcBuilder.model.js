@@ -9,7 +9,10 @@ const pcBuilderSchema = new mongoose.Schema(
       index: true,
     },
     Speaker: {
-      _id: mongoose.Schema.Types.ObjectId,
+      Bid: {
+        type: mongoose.Types.ObjectId,
+        default: () => new mongoose.Types.ObjectId(),
+      },
       Brand: String,
       Category: String,
       Model: String,
@@ -19,7 +22,10 @@ const pcBuilderSchema = new mongoose.Schema(
       ProductId: Number,
     },
     UPS: {
-      _id: mongoose.Schema.Types.ObjectId,
+      Bid: {
+        type: mongoose.Types.ObjectId,
+        default: () => new mongoose.Types.ObjectId(),
+      },
       Brand: String,
       Category: String,
       Model: String,
@@ -29,7 +35,10 @@ const pcBuilderSchema = new mongoose.Schema(
       ProductId: Number,
     },
     RAM: {
-      _id: mongoose.Schema.Types.ObjectId,
+       Bid: {
+        type: mongoose.Types.ObjectId,
+        default: () => new mongoose.Types.ObjectId(),
+      },
       Brand: String,
       Category: String,
       Model: String,
@@ -39,7 +48,10 @@ const pcBuilderSchema = new mongoose.Schema(
       ProductId: Number,
     },
     ROM: {
-      _id: mongoose.Schema.Types.ObjectId,
+       Bid: {
+        type: mongoose.Types.ObjectId,
+        default: () => new mongoose.Types.ObjectId(),
+      },
       Brand: String,
       Category: String,
       Model: String,
@@ -49,7 +61,10 @@ const pcBuilderSchema = new mongoose.Schema(
       ProductId: Number,
     },
     SSD: {
-      _id: mongoose.Schema.Types.ObjectId,
+       Bid: {
+        type: mongoose.Types.ObjectId,
+        default: () => new mongoose.Types.ObjectId(),
+      },
       Brand: String,
       Category: String,
       Model: String,
@@ -59,7 +74,10 @@ const pcBuilderSchema = new mongoose.Schema(
       ProductId: Number,
     },
     PSU: {
-      _id: mongoose.Schema.Types.ObjectId,
+       Bid: {
+        type: mongoose.Types.ObjectId,
+        default: () => new mongoose.Types.ObjectId(),
+      },
       Brand: String,
       Category: String,
       Model: String,
@@ -69,7 +87,10 @@ const pcBuilderSchema = new mongoose.Schema(
       ProductId: Number,
     },
     GPU: {
-      _id: mongoose.Schema.Types.ObjectId,
+       Bid: {
+        type: mongoose.Types.ObjectId,
+        default: () => new mongoose.Types.ObjectId(),
+      },
       Brand: String,
       Category: String,
       Model: String,
@@ -79,7 +100,10 @@ const pcBuilderSchema = new mongoose.Schema(
       ProductId: Number,
     },
     Mouse: {
-      _id: mongoose.Schema.Types.ObjectId,
+       Bid: {
+        type: mongoose.Types.ObjectId,
+        default: () => new mongoose.Types.ObjectId(),
+      },
       Brand: String,
       Category: String,
       Model: String,
@@ -89,7 +113,10 @@ const pcBuilderSchema = new mongoose.Schema(
       ProductId: Number,
     },
     MotherBoard: {
-      _id: mongoose.Schema.Types.ObjectId,
+       Bid: {
+        type: mongoose.Types.ObjectId,
+        default: () => new mongoose.Types.ObjectId(),
+      },
       Brand: String,
       Category: String,
       Model: String,
@@ -99,7 +126,10 @@ const pcBuilderSchema = new mongoose.Schema(
       ProductId: Number,
     },
     Monitor: {
-      _id: mongoose.Schema.Types.ObjectId,
+       Bid: {
+        type: mongoose.Types.ObjectId,
+        default: () => new mongoose.Types.ObjectId(),
+      },
       Brand: String,
       Category: String,
       Model: String,
@@ -109,7 +139,10 @@ const pcBuilderSchema = new mongoose.Schema(
       ProductId: Number,
     },
     Keyboard: {
-      _id: mongoose.Schema.Types.ObjectId,
+       Bid: {
+        type: mongoose.Types.ObjectId,
+        default: () => new mongoose.Types.ObjectId(),
+      },
       Brand: String,
       Category: String,
       Model: String,
@@ -119,7 +152,10 @@ const pcBuilderSchema = new mongoose.Schema(
       ProductId: Number,
     },
     CPU: {
-      _id: mongoose.Schema.Types.ObjectId,
+       Bid: {
+        type: mongoose.Types.ObjectId,
+        default: () => new mongoose.Types.ObjectId(),
+      },
       Brand: String,
       Category: String,
       Model: String,
@@ -129,7 +165,10 @@ const pcBuilderSchema = new mongoose.Schema(
       ProductId: Number,
     },
     CpuCooler: {
-      _id: mongoose.Schema.Types.ObjectId,
+       Bid: {
+        type: mongoose.Types.ObjectId,
+        default: () => new mongoose.Types.ObjectId(),
+      },
       Brand: String,
       Category: String,
       Model: String,
@@ -139,7 +178,10 @@ const pcBuilderSchema = new mongoose.Schema(
       ProductId: Number,
     },
     Casing: {
-      _id: mongoose.Schema.Types.ObjectId,
+       Bid: {
+        type: mongoose.Types.ObjectId,
+        default: () => new mongoose.Types.ObjectId(),
+      },
       Brand: String,
       Category: String,
       Model: String,

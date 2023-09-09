@@ -33,15 +33,15 @@ const getProducts = async (infos = {}, filterObj = {}) => {
   }
 };
 const getProductByModel = async (Model) => {
-try{
+
   const byModel = await Product.find({
     Model: { $regex: Model, $options: "i" },
   });
 
   return { data: byModel };
-}catch{
-return {error : "error"}
-}
+
+
+
 };
 const insertManyProducts = async (Products) => {
   const newProducts = await Product.insertMany(Products);
