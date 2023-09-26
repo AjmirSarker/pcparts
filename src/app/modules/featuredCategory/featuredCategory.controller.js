@@ -1,4 +1,6 @@
+import httpStatus from "http-status";
 import catchAsync from "../../../shared/catchAsync";
+import sendResponse from "../../../shared/sendResponse";
 import { CategoryService } from "./featuredCategory.service";
 
 const getAllCategory = catchAsync(async (req, res) => {

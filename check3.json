@@ -1,0 +1,88 @@
+{
+    "Speaker": {
+      "Category": "Speaker",
+      "Name": "Speaker",
+      "imgLink": "https://i.ibb.co/f1XwNfy/speaker.png"
+    },
+    "UPS": {
+      "Category": "UPS",
+      "Name": "Uninterruptible Power Supply(UPS)",
+      "imgLink": "https://i.ibb.co/fvC1SRR/ups.png"
+    },
+    "RAM": {
+      "Category": "RAM",
+      "Name": "Random-access memory(RAM)",
+      "imgLink": "https://i.ibb.co/FByD2Rs/ram.png"
+    },
+    "ROM": {
+      "Category": "ROM",
+      "Name": "Hard Disk",
+      "imgLink": "https://i.ibb.co/2W0HhZ4/rom.png"
+    },
+    "SSD": {
+      "Category": "SSD",
+      "Name": "Solid State Drive(SSD)",
+      "imgLink": "https://i.ibb.co/CVJc0zZ/SSD.png"
+    },
+    "PSU": {
+      "Category": "PSU",
+      "Name": "Power Supply Unit(PSU)",
+      "imgLink": "https://i.ibb.co/56zjFfS/psu.png"
+    },
+    "GPU": {
+      "Category": "GPU",
+      "Name": "Graphics Processing Unit(GPU)",
+      "imgLink": "https://i.ibb.co/zXctsQF/gpu.png"
+    },
+    "Mouse": {
+      "Category": "Mouse",
+      "Name": "Mouse",
+      "imgLink": "https://i.ibb.co/pLddDXq/mouse.png"
+    },
+    "MotherBoard": {
+      "Category": "MotherBoard",
+      "Name": "Motherboard",
+      "imgLink": "https://i.ibb.co/JpYdVc9/motherboard.png"
+    },
+    "Monitor": {
+      "Category": "Monitor",
+      "Name": "Monitor",
+      "imgLink": "https://i.ibb.co/bvvfhf7/monitor.png"
+    },
+    "Keyboard": {
+      "Category": "Keyboard",
+      "Name": "Keyboard",
+      "imgLink": "https://i.ibb.co/7ptx2x7/keyboard.png"
+    },
+    "CPU": {
+      "Category": "CPU",
+      "Name": "Central Processing Unit(CPU)",
+      "imgLink": "https://i.ibb.co/SwFywXj/cpu.png"
+    },
+    "CpuCooler": {
+      "Category": "CpuCooler",
+      "Name": "Cpu Cooler",
+      "imgLink": "https://i.ibb.co/ccZF35T/cpucooler.png"
+    },
+    "Casing": {
+      "Category": "Casing",
+      "Name": "Casing",
+      "imgLink": "https://i.ibb.co/K6v9Vf7/casing.png"
+    }
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

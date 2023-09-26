@@ -34,6 +34,15 @@ const getProductsByModel = catchAsync(async (req, res) => {
     data: byModel,
   });
 });
+const getProductsByCategory = catchAsync(async (req, res) => {
+  const byCategory = await AllProductsService.getProductByCategory(req.params.category);
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: "Products fetched successfully !",
+    data: byCategory,
+  });
+});
 const insertManyProducts = catchAsync(async (req, res) => {
   const products = await AllProductsService.insertManyProducts(req.body);
   sendResponse(res, {
@@ -52,10 +61,31 @@ const deleteProducts = catchAsync(async (req, res) => {
     data: products,
   });
 });
+const getRandomProducts = catchAsync(async (req, res) => {
+  const products = await AllProductsService.getRandomProducts();
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: "Products fetched successfully !",
+    data: products,
+  });
+});
+const getProductById =catchAsync(async (req, res) => {
+  const product = await AllProductsService.getProductById(req.params.id);
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: "Product fetched successfully !",
+    data: product,
+  });
+})
 
 export const AllProductsController = {
   getProducts,
   getProductsByModel,
   insertManyProducts,
   deleteProducts,
+  getRandomProducts,
+  getProductById,
+  getProductsByCategory
 };
