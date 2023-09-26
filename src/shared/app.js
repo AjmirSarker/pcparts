@@ -1,7 +1,7 @@
 import express from "express";
 
 import cors from "cors";
-import router from "./src/app/routes/route.js";
+import router from "../app/routes/route.js";
 const app = express();
 //middlewares
 app.use(express.json());

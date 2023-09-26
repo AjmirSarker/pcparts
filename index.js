@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import app from "./app.js";
+import app from "./src/shared/app.js";
 import cors from "cors";
 import * as dotenv from "dotenv"; 
 dotenv.config();
