@@ -1,4 +1,4 @@
-import { PCBuilder } from "./pcBuilder.model";
+import { PCBuilder } from "./pcBuilder.model.js";
 
 const createPcBuilder = async (payload) => {
   const result = await PCBuilder.create(payload);

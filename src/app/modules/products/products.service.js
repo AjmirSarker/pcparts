@@ -1,4 +1,4 @@
-import { Product } from "./products.model";
+import { Product } from "./products.model.js";
 
 const getProducts = async (infos = {}, filterObj = {}) => {
   console.log("info product service", infos);

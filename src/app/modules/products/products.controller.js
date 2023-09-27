@@ -1,7 +1,7 @@
-import catchAsync from "../../../shared/catchAsync";
-import sendResponse from "../../../shared/sendResponse";
-import { mergedObjectFields, productFilterFields } from "./products.constans";
-import { AllProductsService } from "./products.service";
+import catchAsync from "../../../shared/catchAsync.js";
+import sendResponse from "../../../shared/sendResponse.js";
+import { mergedObjectFields, productFilterFields } from "./products.constans.js";
+import { AllProductsService } from "./products.service.js";
 import httpStatus from "http-status";
 
 const getProducts = catchAsync(async (req, res) => {

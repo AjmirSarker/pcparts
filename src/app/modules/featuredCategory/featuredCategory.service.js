@@ -1,4 +1,4 @@
-import { Category } from "./featuredCategory.model";
+import { Category } from "./featuredCategory.model.js";
 
 const getAllCategory = async () => {
   const result = await Category.find();
