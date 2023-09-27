@@ -1,5 +1,6 @@
 import express from "express";
-import { AllProductsController } from "./products.controller";
+import { AllProductsController } from "./products.controller.js";
+// import productsController from './products.controller';
 const router = express.Router();
 router.get("/", AllProductsController.getProducts);
 router.post("/", AllProductsController.insertManyProducts);
