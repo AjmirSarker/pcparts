@@ -13,3 +13,4 @@ const getAllCategory = catchAsync(async (req, res) => {
   });
 });
 export const CategoryController = { getAllCategory };
+// export const CategoryController = { getAllCategory };
